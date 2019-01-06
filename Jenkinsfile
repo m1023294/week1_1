@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'mvn --version'
 				sh 'mvn clean install'
-				sh 'mvn sonar:sonar'
+				sh 'mvn sonar:sonar -Dsonar.host.url=http://my58965dns.eastus2.cloudapp.azure.com:9000'
 				echo 'here I am'
             }
         }
