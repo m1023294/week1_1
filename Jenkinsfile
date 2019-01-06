@@ -15,7 +15,7 @@ pipeline {
         }
 		stage('deploy') {
 			steps {
-				sh 'scp target/*.war http://my58965dns.eastus2.cloudapp.azure.com/apache-tomcat-8.5.35/webapps
+				sh 'scp target/*.war http://my58965dns.eastus2.cloudapp.azure.com/apache-tomcat-8.5.35/webapps'
 			}
 		}
     }
