@@ -1,3 +1,3 @@
 pipeline {
-echo "hello"
+echo 'hello'
 }
