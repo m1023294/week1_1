@@ -10,7 +10,7 @@ pipeline {
 		stage('deploy') {
 			steps{
 				sshagent (['tomcat']){
-					sh 'scp target/*.war /apache-tomcat-8.5.35/webapps'
+					sh 'scp target/*.war root@http://my58965dns.eastus2.cloudapp.azure.com:/apache-tomcat-8.5.35/webapps'
 					echo 'deployed'
 				}
 			}
